@@ -1,7 +1,8 @@
 <template>
-  <Primeirocomponente/>
-  <LifeCycle/>
-  <pessoa/>
+  <Primeirocomponente />
+  <p>O dado de app é:{{ testando }}</p>
+  <LifeCycle />
+  <Pessoa />
 </template>
 
 <script>
@@ -14,6 +15,11 @@ export default {
     Primeirocomponente ,
     LifeCycle ,
     Pessoa
+    },
+    data(){
+      return {
+        testando:"teste"
+      }
     }
   }
 </script>
