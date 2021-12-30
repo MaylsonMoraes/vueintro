@@ -7,7 +7,7 @@
         <inputText />
         </div>
         <div>
-        <submit />
+        <submit /> 
         </div>
     </form>
 </template>

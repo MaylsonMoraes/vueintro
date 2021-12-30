@@ -8,7 +8,7 @@ export default {
     data() {
         return{
             nome:'Ainda não'
-        }
+        }   
     },
     created(){
         setTimeout(()=>{

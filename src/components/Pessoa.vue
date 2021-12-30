@@ -1,9 +1,9 @@
 <template>
-    <div>
+    
     <h2>Esta é a descrição da Pessoa:{{ nome }}</h2>
     <info />
     <form />
-    </div>
+    
 </template>
 <script>
 import info from './info'

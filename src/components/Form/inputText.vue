@@ -2,7 +2,7 @@
     <input type="text">
 
 </template>
-<script >
+<script>
 export default {
     name:'inputText'
 }
