@@ -4,6 +4,6 @@
 </template>
 <script>
 export default {
-    name:'inputText'
+    name:'CustominputText'
 }
 </script>

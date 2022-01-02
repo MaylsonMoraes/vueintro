@@ -2,24 +2,25 @@
     
     <h2>Esta é a descrição da Pessoa:{{ nome }}</h2>
     <info />
-    <form />
+    <Customform />
     
 </template>
 <script>
 import info from './info'
-import form from './form'
+import Customform from './form'
+
 
 export default {
     name:'Pessoa',
     components: { 
       info ,
-      form
-  },
+      Customform
+    },
 
-data() {
-return { 
-    nome:'Maylson'
+    data() {
+        return { 
+            nome:'Maylson'
+        }
     }
-}
 }
 </script>

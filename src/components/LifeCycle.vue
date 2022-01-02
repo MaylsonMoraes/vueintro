@@ -18,7 +18,7 @@ export default {
     mounted(){
         setTimeout(()=>{
             this.nome = 'Moraes'
-        },2000) 
+        },2000); 
         
     }
 }

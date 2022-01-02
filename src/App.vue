@@ -1,6 +1,6 @@
 <template>
   <Primeirocomponente />
-  <p>O dado de app é:{{ testando }}</p>
+  <p>O dado de app é:{{ testando  }}</p>
   <LifeCycle />
   <Pessoa />
 </template>

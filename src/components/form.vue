@@ -7,19 +7,19 @@
         <inputText />
         </div>
         <div>
-        <submit /> 
+        <Customsubmit /> 
         </div>
     </form>
 </template>
 <script>
-import inputText from './Form/inputText.vue'
-import submit from './Form/submit.vue'
+import inputText from './Form/inputText'
+import Customsubmit from './Form/submit'
 
 export default {
-    name:'form',
+    name:'Customform',
     components: {
-        inputText ,
-        submit
+        inputText,
+        Customsubmit
     }
 }
 </script>
