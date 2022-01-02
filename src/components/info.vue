@@ -10,11 +10,16 @@
     </ul>
     <p v-show="mostrar_email">Mande uma mensagem para:{{email}}</p>
     <p>Para acessar meu portifólio <a v-bind:href="meu_link" target="_blank">Basta clicar aqui</a></p>
+    <Picture />
 </div>
 </template>
 <script>
+import Picture from './Form/Picture.vue'
 export default {
     name:'info',
+    components: { 
+        Picture 
+        },
     data() {
         return {
             esta_trabalhando: false ,
