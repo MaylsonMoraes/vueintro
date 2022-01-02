@@ -1,5 +1,6 @@
 <template>
     <form action="">
+        <h2>Meu formulário:</h2>
         <div>
         <inputText />
         </div>
