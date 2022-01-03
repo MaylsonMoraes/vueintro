@@ -9,10 +9,10 @@
         <li>Python</li>
     </ul>
     <div>
-        <button @click="showMail">Mostrar e-mail</button>
+        <button @click="showMail">{{ textoBotao }}</button>
     </div>
-    <p v-show="mostrar_email">Mande uma mensagem para:{{email}}</p>
-    <p>Para acessar meu portifólio <a v-bind:href="meu_link" target="_blank">Basta clicar aqui</a></p>
+    <p v-show="mostrar_email">Mande uma mensagem para:{{ email }}</p>
+    <p class="teste">Para acessar meu portifólio <a v-bind:href="meu_link" target="_blank">Basta clicar aqui</a></p>
     <Picture />
 </div>
 </template>
@@ -28,15 +28,26 @@ export default {
             esta_trabalhando: false ,
             mostrar_email: false ,
             email:'maylson@moraes',
-            meu_link:'https://www.google.com.br/'
+            meu_link:'https://www.google.com.br/',
+            textoBotao: 'Mostrar E-mail'
         }
         
     } ,
     methods: {
-        showMail(){
-            console.log("Testando método")
+        showMail() {
             this.mostrar_email = !this.mostrar_email
+            if(!this.mostrar_email) {
+                this.textoBotao = 'Mostrar E-mail'
+            } else {
+                this.textoBotao = 'Ocultar E-mail'
+            }
         }
     }    
 }
 </script>
+
+<style>
+.paragrafo-pai {
+    color:red;
+}
+</style>

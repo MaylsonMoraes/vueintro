@@ -6,7 +6,7 @@
 <script>
 
 export default {
-    name: 'Primeirocomponente.vue',
+    name: 'Primeirocomponente',
     data() {
         return{
             nome:"Maylson",

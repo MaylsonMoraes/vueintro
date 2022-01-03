@@ -19,7 +19,6 @@ export default {
         setTimeout(()=>{
             this.nome = 'Moraes'
         },2000); 
-        
-    }
+    },
 }
 </script>
