@@ -1,5 +1,5 @@
 <template>
-  <header />
+  <Header :esta_logado="true"/>
   <Primeirocomponente />
   <p class="paragrafo-pai">O dado de app é:{{ testando  }}</p>
   <LifeCycle />
@@ -7,17 +7,17 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import Primeirocomponente from './components/Primeirocomponente.vue'
 import LifeCycle from './components/LifeCycle.vue'
 import Pessoa from './components/Pessoa.vue'
-import header from './components/header.vue'
 export default {
   name: 'App',
   components: {
     Primeirocomponente ,
     LifeCycle ,
     Pessoa,
-    header,
+    Header
     },
     data(){
       return {
